@@ -20,7 +20,7 @@ def count_sliding_increases( data ) :
     return increases
 
 def parse_data_file( file_name ) :
-    with open( file_name, 'r' ) as file:
+    with open( file_name, 'r' ) as file :
         data = file.read().splitlines()
     data = list( map( int, data ) )
     return data
